@@ -2,8 +2,10 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const { swaggerUi, swaggerDocs } = require("./swagger");
+const cors = require("cors");
 
 const app = express();
+app.use(cors());
 app.use(express.json()); // Middleware for parsing JSON
 
 // Connect to MongoDB
