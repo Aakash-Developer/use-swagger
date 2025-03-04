@@ -11,7 +11,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: "https://akkimacs.me/api",
+        url: "https://akkimacs.me",
       },
     ],
     components: {
